@@ -1,0 +1,31 @@
+{
+  "name": "lunch-hero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pages/index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=8.1.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "next": "^4.0.3",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scroll": "^1.6.1",
+    "styled-components": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-plugin-inline-react-svg": "^0.4.0",
+    "babel-plugin-styled-components": "^1.2.1"
+  }
+}
