@@ -14,7 +14,7 @@ export default styled.a`
   font-weight: bold;
   height: 46px;
   justify-content: space-between;
-  min-width: 180px;
+  max-width: 180px;
   opacity: ${props => (props.isVisible ? 1 : 0)};
   padding: 0 20px;
   text-decoration: none;
