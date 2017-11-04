@@ -22,6 +22,7 @@
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-responsive": "^3.0.0",
     "react-scroll": "^1.6.1",
     "styled-components": "^2.2.1"
   },
