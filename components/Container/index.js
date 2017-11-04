@@ -5,10 +5,17 @@ import PropTypes from 'prop-types';
 // Styles
 import StyledContainer from './styles';
 
-const Container = props => <StyledContainer>{props.children}</StyledContainer>;
+const Container = ({ children, ...props }) => (
+  <StyledContainer {...props}>{children}</StyledContainer>
+);
 
 Container.propTypes = {
   children: PropTypes.any.isRequired,
+  className: PropTypes.string,
+};
+
+Container.defaultProps = {
+  className: null,
 };
 
 export default Container;
