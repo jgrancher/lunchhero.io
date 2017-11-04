@@ -17,6 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "classnames": "^2.2.5",
+    "grid-styled": "^2.0.0-11",
     "next": "^4.0.3",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",

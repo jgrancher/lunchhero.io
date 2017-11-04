@@ -3,10 +3,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Styles
-import StyledTitle from './styles';
+import StyledHeading from './styles';
 
 const Title = props => (
-  <StyledTitle isWhite={props.isWhite}>{props.children}</StyledTitle>
+  <StyledHeading className={props.className} isWhite={props.isWhite}>
+    {props.children}
+  </StyledHeading>
 );
 
 Title.propTypes = {

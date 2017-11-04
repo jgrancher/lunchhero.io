@@ -5,21 +5,21 @@ import PropTypes from 'prop-types';
 // Styles
 import StyledHeading from './styles';
 
-const Heading = props => (
+const SectionHeading = props => (
   <StyledHeading className={props.className} isWhite={props.isWhite}>
     {props.children}
   </StyledHeading>
 );
 
-Heading.propTypes = {
+SectionHeading.propTypes = {
   children: PropTypes.any.isRequired,
   className: PropTypes.any,
   isWhite: PropTypes.bool,
 };
 
-Heading.defaultProps = {
+SectionHeading.defaultProps = {
   className: '',
   isWhite: false,
 };
 
-export default Heading;
+export default SectionHeading;

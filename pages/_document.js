@@ -26,6 +26,10 @@ class Document extends NextDocument {
           <meta property="og:title" content="Sharing title here." />
           <meta property="og:url" content="http://url.com" />
           <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+          <link
+            href="https://fonts.googleapis.com/css?family=Muli:300,400,400i,700,800,900"
+            rel="stylesheet"
+          />
           {this.props.styleTags}
         </Head>
         <body>

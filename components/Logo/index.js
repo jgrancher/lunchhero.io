@@ -5,16 +5,20 @@ import PropTypes from 'prop-types';
 // Styles
 import StyledLink from './styles';
 
-const Logo = props => {
-  return <StyledLink className={props.className} />;
-};
+const Logo = props => (
+  <StyledLink {...props}>
+    LunchHero<sup>BETA</sup>
+  </StyledLink>
+);
 
 Logo.propTypes = {
-  className: PropTypes.any,
+  isBigger: PropTypes.bool,
+  isVisible: PropTypes.bool,
 };
 
 Logo.defaultProps = {
-  className: null,
+  isBigger: false,
+  isVisible: true,
 };
 
 export default Logo;

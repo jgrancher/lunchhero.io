@@ -5,24 +5,6 @@ import { injectGlobal } from 'styled-components';
 import { fonts, spaces } from './variables';
 
 injectGlobal`
-  /* Font faces */
-  @font-face {
-    font-family: ${fonts.primary};
-    src: url('/static/fonts/AvenirNext-Regular.ttf');
-  }
-
-  @font-face {
-    font-family: ${fonts.primary};
-    src: url('/static/fonts/AvenirNext-Bold.ttf');
-    font-weight: 700;
-  }
-
-  @font-face {
-    font-family: ${fonts.primary};
-    src: url('/static/fonts/AvenirNext-UltraLight.ttf');
-    font-weight: 200;
-  }
-
   * {
     margin: 0;
     padding: 0;
@@ -37,7 +19,6 @@ injectGlobal`
   html {
     box-sizing: border-box;
     font-size: 62.5%; /* Reset to 10px as a base for rem units! */
-    touch-action: manipulation;
   }
 
   body {
@@ -47,6 +28,7 @@ injectGlobal`
 
   img {
     max-width: 100%;
+    vertical-align: middle;
   }
 
   button {
@@ -65,20 +47,7 @@ injectGlobal`
     list-style: none;
   }
 
-  li > ul {
-    padding-left: ${spaces.md}px;
-    padding-top: ${spaces.sm}px;
-  }
-
-  pre {
-    white-space: pre-wrap;
-  }
-
   /* Basic layout classes */
-  .hidden {
-    display: none;
-  }
-
   .h-100 {
     height: 100%;
   }
@@ -89,30 +58,6 @@ injectGlobal`
 
   .mh-100vh {
     min-height: 100vh;
-  }
-
-  .flex {
-    display: flex;
-  }
-
-  .f-1 {
-    flex: 1;
-  }
-
-  .fd-column {
-    flex-direction: column;
-  }
-
-  .jc-center {
-    justify-content: center;
-  }
-
-  .jc-space-between {
-    justify-content: space-between;
-  }
-
-  .jc-end {
-    justify-content: flex-end;
   }
 
   /* Text utils */
@@ -143,36 +88,5 @@ injectGlobal`
 
   .mb-xxl {
     margin-bottom: ${spaces.xxl}px;
-  }
-
-  .mr-xs {
-    margin-right: ${spaces.xs}px;
-  }
-
-  .mr-sm {
-    margin-right: ${spaces.sm}px;
-  }
-
-  .pt-xl {
-    padding-top: ${spaces.xl}px;
-  }
-
-  .pb-xl {
-    padding-bottom: ${spaces.xl}px;
-  }
-
-  .plr-md {
-    padding-left: ${spaces.md}px;
-    padding-right: ${spaces.md}px;
-  }
-
-  .plr-lg {
-    padding-left: ${spaces.lg}px;
-    padding-right: ${spaces.lg}px;
-  }
-
-  .plr-xl {
-    padding-left: ${spaces.xl}px;
-    padding-right: ${spaces.xl}px;
   }
 `;
