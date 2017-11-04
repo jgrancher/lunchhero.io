@@ -4,24 +4,33 @@ import PropTypes from 'prop-types';
 import { Flex, Box } from 'grid-styled';
 
 // Components
+import ButtonSlack from '../ButtonSlack';
 import Container from '../Container';
 import Logo from '../Logo';
 
 // Styles
-import { StyledSection } from './styles';
+import { StyledSection, StyledCopy, StyledSlogan } from './styles';
 
 const SectionIntro = props => (
   <StyledSection hasPadding={props.hasPadding}>
-    <Container>
-      <Flex>
-        <Box width={[1, 1 / 2]}>
+    <Container className="h-100">
+      <Flex
+        align={[null, null, 'center']}
+        className="h-100"
+        justify={[null, null, 'space-between']}
+        wrap
+      >
+        <Box width={[1, 1, 1 / 2]} pr={[0, 0, 3]}>
           <Logo isBigger />
-          <p>
+          <StyledCopy>
             A Slackbot that helps you raise money for charity by getting lunch
-            for your co-workers.<br />
-            <em>Feed the world, and your co-workers.</em>
-          </p>
-          <button>Add to Slack</button>
+            for your co-workers.
+          </StyledCopy>
+          <StyledSlogan>Feed the world, and your co-workers.</StyledSlogan>
+          <ButtonSlack isBigger />
+        </Box>
+        <Box width={[1, 1, 1 / 2]} py={[3, 0]}>
+          <img alt="Lunch Hero" src="../../static/assets/lunch-hero.png" />
         </Box>
       </Flex>
     </Container>

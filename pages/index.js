@@ -1,6 +1,7 @@
 // Externals
 import React from 'react';
 import { Element } from 'react-scroll';
+import { ThemeProvider } from 'styled-components';
 
 // Components
 import Footer from '../components/Footer';
@@ -14,6 +15,7 @@ import SectionWhy from '../components/SectionWhy';
 
 // Styles
 import '../styles';
+import { spaces } from '../styles/variables';
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -65,24 +67,26 @@ class IndexPage extends React.Component {
 
   render() {
     return (
-      <main>
-        <Header isSticky={this.state.isSticky} />
-        <SectionIntro hasPadding={this.state.isSticky} />
-        <Element name="how-it-works">
-          <SectionHowItWorks />
-        </Element>
-        <SectionStepByStep />
-        <Element name="how-much">
-          <SectionHowMuch />
-        </Element>
-        <Element name="why">
-          <SectionWhy />
-        </Element>
-        <Element name="partners">
-          <SectionPartners />
-        </Element>
-        <Footer />
-      </main>
+      <ThemeProvider theme={{ space: spaces }}>
+        <main>
+          <Header isSticky={this.state.isSticky} />
+          <SectionIntro hasPadding={this.state.isSticky} />
+          <Element name="how-it-works">
+            <SectionHowItWorks />
+          </Element>
+          <SectionStepByStep />
+          <Element name="how-much">
+            <SectionHowMuch />
+          </Element>
+          <Element name="why">
+            <SectionWhy />
+          </Element>
+          <Element name="partners">
+            <SectionPartners />
+          </Element>
+          <Footer />
+        </main>
+      </ThemeProvider>
     );
   }
 }
