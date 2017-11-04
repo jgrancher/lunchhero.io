@@ -4,15 +4,14 @@ import styled from 'styled-components';
 // Variables
 import { colors, mediaQuery, spaces } from '../../styles/variables';
 
-export default styled.h2`
-  color: ${props => (props.isWhite ? colors.white : colors.grey)};
-  font-size: 2.8rem;
+export default styled.h4`
+  color: ${colors.black};
+  font-size: 2rem;
   font-weight: 800;
   line-height: 1.5;
-  margin-bottom: ${spaces[2]}px;
-  text-align: center;
+  margin-bottom: ${spaces[1]}px;
 
   ${mediaQuery(2)} {
-    font-size: 3.8rem;
+    font-size: 2.4rem;
   }
 `;

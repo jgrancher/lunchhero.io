@@ -11,6 +11,7 @@ export const StyledHeader = styled.header`
   padding: 12px 0;
   position: fixed;
   width: 100%;
+  z-index: 10;
 
   ${mediaQuery(1)} {
     box-shadow: ${props =>

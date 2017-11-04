@@ -12,8 +12,8 @@ export const colors = {
 
 // Gradients
 export const gradients = {
+  orange: `linear-gradient(to right, ${colors.orange} 0%, ${colors.pink} 25%, ${colors.pink} 50%, ${colors.purple} 100%)`,
   pink: `linear-gradient(to right, ${colors.pink} 0%, ${colors.pink} 25%, ${colors.purple} 100%)`,
-  purple: `linear-gradient(to left, ${colors.pink} 0%, ${colors.pink} 25%, ${colors.purple} 100%)`,
 };
 
 // Fonts

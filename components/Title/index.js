@@ -5,19 +5,17 @@ import PropTypes from 'prop-types';
 // Styles
 import StyledHeading from './styles';
 
-const SectionTitle = ({ children, ...props }) => (
+const Title = ({ children, ...props }) => (
   <StyledHeading {...props}>{children}</StyledHeading>
 );
 
-SectionTitle.propTypes = {
+Title.propTypes = {
   children: PropTypes.any.isRequired,
   className: PropTypes.any,
-  isWhite: PropTypes.bool,
 };
 
-SectionTitle.defaultProps = {
+Title.defaultProps = {
   className: '',
-  isWhite: false,
 };
 
-export default SectionTitle;
+export default Title;
