@@ -48,6 +48,10 @@ export const StyledList = styled.ul`
     transition: color ${times.medium}ms ease;
   }
 
+  a:hover {
+    color: ${colors.black};
+  }
+
   a.active {
     color: ${colors.black};
     font-weight: bold;
