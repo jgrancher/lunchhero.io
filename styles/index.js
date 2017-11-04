@@ -64,29 +64,4 @@ injectGlobal`
   .t-center {
     text-align: center;
   }
-
-  /* Spacer utils */
-  .mb-xs {
-    margin-bottom: ${spaces.xs}px;
-  }
-
-  .mb-sm {
-    margin-bottom: ${spaces.sm}px;
-  }
-
-  .mb-md {
-    margin-bottom: ${spaces.md}px;
-  }
-
-  .mb-lg {
-    margin-bottom: ${spaces.lg}px;
-  }
-
-  .mb-xl {
-    margin-bottom: ${spaces.xl}px;
-  }
-
-  .mb-xxl {
-    margin-bottom: ${spaces.xxl}px;
-  }
 `;
