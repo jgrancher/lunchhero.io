@@ -11,10 +11,12 @@ const SectionCopy = ({ children, ...props }) => (
 
 SectionCopy.propTypes = {
   children: PropTypes.any.isRequired,
+  isCentered: PropTypes.bool,
 };
 
 SectionCopy.defaultProps = {
   className: '',
+  isCentered: true,
 };
 
 export default SectionCopy;

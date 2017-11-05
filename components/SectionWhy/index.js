@@ -22,7 +22,7 @@ const SectionWhy = props => (
     </SectionCopy>
     <Container>
       <StyledBlocksContainer>
-        <Flex align="stretch" ml="5%" mr="5%" wrap>
+        <Flex align="stretch" ml={[0, 0, '5%']} mr={[0, 0, '5%']} wrap>
           <Box width={[1, 1, 1 / 3]} px={[0, 0, 2]} mb={[2, 2, 0]}>
             <Why
               copy="Compete against your workmates"
