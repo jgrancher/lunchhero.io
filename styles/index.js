@@ -38,9 +38,8 @@ injectGlobal`
     outline: none;
   }
 
-  button[disabled] {
-    cursor: not-allowed;
-    opacity: 0.3;
+  a {
+    cursor: pointer;
   }
 
   ul {
@@ -48,16 +47,12 @@ injectGlobal`
   }
 
   /* Basic layout classes */
+  .w-100 {
+    width: 100%;
+  }
+
   .h-100 {
     height: 100%;
-  }
-
-  .h-100vh {
-    height: 100vh;
-  }
-
-  .mh-100vh {
-    min-height: 100vh;
   }
 
   /* Text utils */

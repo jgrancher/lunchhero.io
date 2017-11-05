@@ -45,7 +45,6 @@ export const StyledList = styled.ul`
 
   a {
     color: ${colors.grey};
-    cursor: pointer;
     transition: color ${times.medium}ms ease;
   }
 
