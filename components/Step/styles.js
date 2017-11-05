@@ -17,6 +17,10 @@ export default styled.div`
   }
 
   img {
-    margin-top: ${spaces[2]}px;
+    margin-top: ${props => (props.isLast ? spaces[3] : spaces[2])}px;
+
+    ${mediaQuery(2)} {
+      margin-top: 0;
+    }
   }
 `;

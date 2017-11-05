@@ -6,11 +6,12 @@ import PropTypes from 'prop-types';
 import StyledCircle from './styles';
 
 const Circle = ({ children, ...props }) => (
-  <StyledCircle>{children}</StyledCircle>
+  <StyledCircle {...props}>{children}</StyledCircle>
 );
 
 Circle.propTypes = {
   children: PropTypes.any,
+  isShifted: PropTypes.bool,
 };
 
 export default Circle;

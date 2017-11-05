@@ -12,22 +12,15 @@ import Title from '../Title';
 import StyledStep from './styles';
 
 const Step = props => (
-  <StyledStep>
+  <StyledStep isLast={props.isLast}>
     <Flex align="center" className="w-100" justify="stretch" wrap>
-      <Box width={[1, 1, 1 / 2]} pr={[0, 0, 5]}>
-        <Circle>{props.number}</Circle>
-        <Title>
-          {props.title[0]}
-          <br />
-          {props.title[1]}
-        </Title>
+      <Box width={[1, 1, 1 / 2]} px={[0, 0, 5]}>
+        {props.number ? <Circle>{props.number}</Circle> : null}
+        <Title>{props.title}</Title>
         {props.copy ? <Copy>{props.copy}</Copy> : null}
       </Box>
       <Box width={[1, 1, 1 / 2]}>
-        <img
-          alt="Step by step"
-          src={`../../static/assets/step-${props.number}.png`}
-        />
+        <img alt="" src={`../../static/assets/${props.icon}.png`} />
       </Box>
     </Flex>
   </StyledStep>
@@ -35,12 +28,16 @@ const Step = props => (
 
 Step.propTypes = {
   copy: PropTypes.string,
-  number: PropTypes.number.isRequired,
-  title: PropTypes.array.isRequired,
+  icon: PropTypes.string.isRequired,
+  isLast: PropTypes.bool,
+  number: PropTypes.number,
+  title: PropTypes.string.isRequired,
 };
 
 Step.defaultProps = {
   copy: null,
+  isLast: false,
+  number: null,
 };
 
 export default Step;

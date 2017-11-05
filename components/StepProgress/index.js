@@ -14,8 +14,8 @@ const StepProgress = props => (
     <Flex align="center" className="w-100" justify="stretch" wrap>
       <Box width={[1, 1, 1 / 2]} pr={[0, 0, 5]} />
       <Box width={[1, 1, 1 / 2]}>
-        <StyledImageContainer>
-          <Circle>
+        <StyledImageContainer isLast={props.isLast}>
+          <Circle isShifted={props.isLast}>
             <img alt="" src={`../../static/svgs/icon-arrow.svg`} />
           </Circle>
         </StyledImageContainer>
@@ -23,5 +23,13 @@ const StepProgress = props => (
     </Flex>
   </div>
 );
+
+StepProgress.propTypes = {
+  isLast: PropTypes.bool,
+};
+
+StepProgress.defaultProps = {
+  isLast: false,
+};
 
 export default StepProgress;

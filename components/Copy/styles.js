@@ -11,6 +11,6 @@ export default styled.p`
   text-align: center;
 
   ${mediaQuery(2)} {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 `;

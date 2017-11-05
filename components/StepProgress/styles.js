@@ -6,7 +6,7 @@ import { colors, mediaQuery, spaces } from '../../styles/variables';
 
 export default styled.div`
   display: none;
-  padding-bottom: 100px;
+  padding-bottom: ${props => (props.isLast ? 0 : 100)}px;
   padding-top: 100px;
   position: relative;
   z-index: 1;
@@ -30,6 +30,7 @@ export default styled.div`
   }
 
   &::after {
+    height: ${props => (props.isLast ? '200%' : 'calc(100% + 16px)')};
     top: 50%;
   }
 `;
