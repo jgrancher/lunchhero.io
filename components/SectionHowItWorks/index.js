@@ -9,7 +9,7 @@ import SectionCopy from '../SectionCopy';
 import SectionTitle from '../SectionTitle';
 
 // Styles
-import { StyledBanner, StyledBlockContainer } from './styles';
+import { StyledBanner, StyledBlocksContainer } from './styles';
 
 const SectionHowItWorks = props => (
   <section>
@@ -22,7 +22,7 @@ const SectionHowItWorks = props => (
           costs $13.
         </SectionCopy>
       </StyledBanner>
-      <StyledBlockContainer>
+      <StyledBlocksContainer>
         <Flex ml="10%" mr="10%" wrap>
           <Box width={[1, 1, 1 / 3]} pr={[0, 0, 4]} mb={[4, 4, 0]}>
             <HowItWorks
@@ -46,7 +46,7 @@ const SectionHowItWorks = props => (
             />
           </Box>
         </Flex>
-      </StyledBlockContainer>
+      </StyledBlocksContainer>
     </Container>
   </section>
 );

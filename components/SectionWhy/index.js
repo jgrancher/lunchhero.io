@@ -1,11 +1,53 @@
 // Externals
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Box, Flex } from 'grid-styled';
 
 // Components
+import Container from '../Container';
+import SectionCopy from '../SectionCopy';
+import SectionTitle from '../SectionTitle';
+import Why from '../Why';
 
-const SectionWhy = props => <section>why</section>;
+// Styles
+import { StyledSection, StyledBlocksContainer } from './styles';
 
-SectionWhy.propTypes = {};
+const SectionWhy = props => (
+  <StyledSection>
+    <SectionTitle>Why LunchHero?</SectionTitle>
+    <SectionCopy>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam.
+    </SectionCopy>
+    <Container>
+      <StyledBlocksContainer>
+        <Flex align="stretch" ml="5%" mr="5%" wrap>
+          <Box width={[1, 1, 1 / 3]} px={[0, 0, 2]} mb={[2, 2, 0]}>
+            <Why
+              copy="Compete against your workmates"
+              icon="icon-why-1"
+              title="Be a gaddam lunch hero!"
+            />
+          </Box>
+          <Box width={[1, 1, 1 / 3]} px={[0, 0, 2]} mb={[2, 2, 0]}>
+            <Why
+              copy="This is a super simple way of making a difference"
+              icon="icon-why-2"
+              title="Because you’re just a good person"
+            />
+          </Box>
+          <Box width={[1, 1, 1 / 3]} px={[0, 0, 2]}>
+            <Why
+              copy="But... you’re not going to run another marathon"
+              icon="icon-why-3"
+              title="Because you’d like to do something..."
+            />
+          </Box>
+        </Flex>
+      </StyledBlocksContainer>
+    </Container>
+  </StyledSection>
+);
 
 export default SectionWhy;

@@ -10,7 +10,7 @@ export const StyledBanner = styled.div`
   padding: 100px 0 140px;
 `;
 
-export const StyledBlockContainer = styled.div`
+export const StyledBlocksContainer = styled.div`
   margin: 0 auto;
   position: relative;
   text-align: center;
