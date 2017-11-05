@@ -6,6 +6,7 @@ import { colors, mediaQuery, spaces } from '../../styles/variables';
 
 export const StyledSection = styled.section`
   ${mediaQuery(2)} {
+    margin-bottom: ${spaces[5]}px;
     padding-top: 120px;
   }
 `;
