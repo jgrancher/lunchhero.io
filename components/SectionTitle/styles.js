@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { colors, mediaQuery, spaces } from '../../styles/variables';
 
 export default styled.h2`
-  color: ${props => (props.isWhite ? colors.white : colors.grey)};
+  color: ${props => (props.isWhite ? colors.white : colors.black)};
   font-size: 2.8rem;
   font-weight: 800;
   line-height: 1.5;

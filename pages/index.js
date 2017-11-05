@@ -55,7 +55,6 @@ class IndexPage extends React.Component {
   };
 
   handleStickyHeader = position => {
-    // console.log('handleStickyHeader', window.scrollY);
     if (!this.state.isSticky && position > 0) {
       this.setState({ isSticky: true });
     }
@@ -73,8 +72,8 @@ class IndexPage extends React.Component {
           <SectionIntro hasPadding={this.state.isSticky} />
           <Element name="how-it-works">
             <SectionHowItWorks />
+            <SectionStepByStep />
           </Element>
-          <SectionStepByStep />
           <Element name="how-much">
             <SectionHowMuch />
           </Element>

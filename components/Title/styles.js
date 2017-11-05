@@ -10,6 +10,7 @@ export default styled.h4`
   font-weight: 800;
   line-height: 1.5;
   margin-bottom: ${spaces[1]}px;
+  margin-top: ${spaces[1]}px;
 
   ${mediaQuery(2)} {
     font-size: 2.4rem;

@@ -2,11 +2,12 @@
 export const colors = {
   black: '#000000',
   grey: '#8989a3',
+  greyBlue: '#e8f3f6',
   greyLight: '#f5fafb',
   orange: '#ff814f',
   pink: '#ff266e',
+  pinkLight: '#e83a76',
   purple: '#9937ec',
-  red: '#ff2c6a',
   white: '#ffffff',
 };
 
@@ -22,7 +23,7 @@ export const fonts = {
 };
 
 // Spaces
-export const spaces = [0, 10, 20, 40, 50];
+export const spaces = [0, 10, 20, 40, 50, 100];
 
 // Animations times
 export const times = {

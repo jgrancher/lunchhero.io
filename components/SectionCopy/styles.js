@@ -7,7 +7,10 @@ import { colors, mediaQuery } from '../../styles/variables';
 export default styled.p`
   color: ${props => (props.isWhite ? colors.white : colors.grey)};
   font-size: 2rem;
-  line-height: 1.75;
+  line-height: 1.7;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 66.66%;
   text-align: center;
 
   ${mediaQuery(2)} {

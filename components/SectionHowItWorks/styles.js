@@ -7,7 +7,7 @@ import { gradients, mediaQuery, spaces } from '../../styles/variables';
 export const StyledBanner = styled.div`
   background-image: ${gradients.orange};
   border-radius: 10px;
-  padding: 100px 16.5% 140px;
+  padding: 100px 0 140px;
 `;
 
 export const StyledList = styled.ul`
@@ -21,6 +21,7 @@ export const StyledList = styled.ul`
 
     ${mediaQuery(2)} {
       display: inline-block;
+      margin-bottom: 0;
       margin-right: 60px;
       max-width: 280px;
       width: 33.33%;
@@ -33,9 +34,5 @@ export const StyledList = styled.ul`
 
   img {
     margin-bottom: ${spaces[2]}px;
-
-    ${mediaQuery(2)} {
-      margin-bottom: ${spaces[3]}px;
-    }
   }
 `;

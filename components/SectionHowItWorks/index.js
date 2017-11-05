@@ -1,6 +1,5 @@
 // Externals
 import React from 'react';
-import PropTypes from 'prop-types';
 
 // Components
 import Container from '../Container';
@@ -52,7 +51,5 @@ const SectionHowItWorks = props => (
     </Container>
   </section>
 );
-
-SectionHowItWorks.propTypes = {};
 
 export default SectionHowItWorks;
