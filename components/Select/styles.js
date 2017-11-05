@@ -19,9 +19,9 @@ export default styled.select`
   font-weight: bold;
   height: 50px;
   line-height: 50px;
-  margin: 0 5px;
-  min-width: 150px;
-  padding: 0 ${spaces[2]}px;
+  margin: 0 5px ${spaces[1]}px;
+  min-width: 140px;
+  padding: 0 ${spaces[1]}px;
 
   option {
     margin: 0;
