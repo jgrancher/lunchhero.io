@@ -23,22 +23,22 @@ const SectionHowItWorks = props => (
         </CopySection>
       </StyledBanner>
       <StyledBlocksContainer>
-        <Flex ml="10%" mr="10%" wrap>
-          <Box width={[1, 1, 1 / 3]} pr={[0, 0, 4]} mb={[4, 4, 0]}>
+        <Flex align="stretch" ml={[0, 0, '5%']} mr={[0, 0, '5%']} wrap>
+          <Box width={[1, 1, 1 / 3]} px={[0, 0, 2]} mb={[4, 4, 0]}>
             <HowItWorks
               icon="sally"
               title="Sally pays $15"
               copy="Sally pays a little extra to have lunch delivered to her desk while helping a charity."
             />
           </Box>
-          <Box width={[1, 1, 1 / 3]} pr={[0, 0, 4]} mb={[4, 4, 0]}>
+          <Box width={[1, 1, 1 / 3]} px={[0, 0, 2]} mb={[4, 4, 0]}>
             <HowItWorks
               icon="you"
               title="You get $13"
               copy="You go for a walk and buy Sally lunch with her $13, exactly what she paid you."
             />
           </Box>
-          <Box width={[1, 1, 1 / 3]}>
+          <Box width={[1, 1, 1 / 3]} px={[0, 0, 2]}>
             <HowItWorks
               icon="coin"
               title="World Vision gets $2"
