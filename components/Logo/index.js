@@ -14,11 +14,13 @@ const Logo = props => (
 Logo.propTypes = {
   isBigger: PropTypes.bool,
   isVisible: PropTypes.bool,
+  isWhite: PropTypes.bool,
 };
 
 Logo.defaultProps = {
   isBigger: false,
   isVisible: true,
+  isWhite: false,
 };
 
 export default Logo;
