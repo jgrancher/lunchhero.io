@@ -12,10 +12,12 @@ const Title = ({ children, ...props }) => (
 Title.propTypes = {
   children: PropTypes.any.isRequired,
   className: PropTypes.any,
+  isWhite: PropTypes.bool,
 };
 
 Title.defaultProps = {
   className: '',
+  isWhite: false,
 };
 
 export default Title;
