@@ -1,15 +1,15 @@
 // Externals
 import React from 'react';
+import { Box, Flex } from 'grid-styled';
 
 // Components
 import Container from '../Container';
-import Copy from '../Copy';
+import HowItWorks from '../HowItWorks';
 import SectionCopy from '../SectionCopy';
 import SectionTitle from '../SectionTitle';
-import Title from '../Title';
 
 // Styles
-import { StyledBanner, StyledList } from './styles';
+import { StyledBanner, StyledBlockContainer } from './styles';
 
 const SectionHowItWorks = props => (
   <section>
@@ -22,32 +22,31 @@ const SectionHowItWorks = props => (
           costs $13.
         </SectionCopy>
       </StyledBanner>
-      <StyledList>
-        <li>
-          <img alt="" src="../../static/assets/icon-sally.png" />
-          <Title>Sally pays 15$</Title>
-          <Copy>
-            Sally pays a little extra to have lunch delivered to her desk while
-            helping a charity.
-          </Copy>
-        </li>
-        <li>
-          <img alt="" src="../../static/assets/icon-you.png" />
-          <Title>You get $13</Title>
-          <Copy>
-            You go for a walk and buy Sally lunch with her $13, exactly what she
-            paid you.
-          </Copy>
-        </li>
-        <li>
-          <img alt="" src="../../static/assets/icon-coin.png" />
-          <Title>World Vision gets $2</Title>
-          <Copy>
-            You raise $2 for World Vision.<br />You’re happy, Sally’s happy...
-            Everyone's happy!
-          </Copy>
-        </li>
-      </StyledList>
+      <StyledBlockContainer>
+        <Flex ml="10%" mr="10%" wrap>
+          <Box width={[1, 1, 1 / 3]} pr={[0, 0, 4]} mb={[4, 4, 0]}>
+            <HowItWorks
+              icon="sally"
+              title="Sally pays $15"
+              copy="Sally pays a little extra to have lunch delivered to her desk while helping a charity."
+            />
+          </Box>
+          <Box width={[1, 1, 1 / 3]} pr={[0, 0, 4]} mb={[4, 4, 0]}>
+            <HowItWorks
+              icon="you"
+              title="You get $13"
+              copy="You go for a walk and buy Sally lunch with her $13, exactly what she paid you."
+            />
+          </Box>
+          <Box width={[1, 1, 1 / 3]}>
+            <HowItWorks
+              icon="coin"
+              title="World Vision gets $2"
+              copy="You raise $2 for World Vision. You’re happy, Sally’s happy... Everyone's happy!"
+            />
+          </Box>
+        </Flex>
+      </StyledBlockContainer>
     </Container>
   </section>
 );

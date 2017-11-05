@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 // Variables
-import { gradients, mediaQuery, spaces } from '../../styles/variables';
+import { gradients } from '../../styles/variables';
 
 export const StyledBanner = styled.div`
   background-image: ${gradients.orange};
@@ -10,29 +10,9 @@ export const StyledBanner = styled.div`
   padding: 100px 0 140px;
 `;
 
-export const StyledList = styled.ul`
+export const StyledBlockContainer = styled.div`
   margin: 0 auto;
   position: relative;
   text-align: center;
   top: -80px;
-
-  li {
-    margin-bottom: ${spaces[3]}px;
-
-    ${mediaQuery(2)} {
-      display: inline-block;
-      margin-bottom: 0;
-      margin-right: 60px;
-      max-width: 280px;
-      width: 33.33%;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
-
-  img {
-    margin-bottom: ${spaces[2]}px;
-  }
 `;
