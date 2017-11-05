@@ -4,7 +4,7 @@ import { Box, Flex } from 'grid-styled';
 
 // Components
 import Container from '../Container';
-import SectionCopy from '../SectionCopy';
+import CopySection from '../CopySection';
 import Select from '../Select';
 import Title from '../Title';
 
@@ -55,7 +55,7 @@ class SectionHowMuch extends React.Component {
             <StyledTitleContainer>
               <Title isWhite>How much could I raise?</Title>
             </StyledTitleContainer>
-            <SectionCopy isWhite>
+            <CopySection isWhite>
               If I get{' '}
               <Select
                 defaultValue={this.state.people}
@@ -74,7 +74,7 @@ class SectionHowMuch extends React.Component {
               a week, I'll raise <strong>${perWeek} a week</strong>,
               <br />
               or <strong>${perYear} a year</strong>
-            </SectionCopy>
+            </CopySection>
           </StyledBanner>
         </Container>
       </StyledSection>

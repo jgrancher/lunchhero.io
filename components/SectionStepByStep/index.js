@@ -4,22 +4,22 @@ import PropTypes from 'prop-types';
 
 // Components
 import Container from '../Container';
-import SectionCopy from '../SectionCopy';
-import SectionTitle from '../SectionTitle';
+import CopySection from '../CopySection';
 import Step from '../Step';
 import StepProgress from '../StepProgress';
+import TitleSection from '../TitleSection';
 
 // Styles
 import { StyledSection, StyledList, StyledExtraStep } from './styles';
 
 const SectionStepByStep = props => (
   <StyledSection>
-    <SectionTitle>Step by step</SectionTitle>
-    <SectionCopy>
+    <TitleSection>Step by step</TitleSection>
+    <CopySection>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam.
-    </SectionCopy>
+    </CopySection>
     <Container>
       <StyledList>
         <li className="step">

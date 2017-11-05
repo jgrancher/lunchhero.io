@@ -5,19 +5,19 @@ import PropTypes from 'prop-types';
 // Styles
 import StyledCopy from './styles';
 
-const SectionCopy = ({ children, ...props }) => (
+const CopySection = ({ children, ...props }) => (
   <StyledCopy {...props}>{children}</StyledCopy>
 );
 
-SectionCopy.propTypes = {
+CopySection.propTypes = {
   children: PropTypes.any.isRequired,
   className: PropTypes.any,
   isWhite: PropTypes.bool,
 };
 
-SectionCopy.defaultProps = {
+CopySection.defaultProps = {
   className: '',
   isWhite: false,
 };
 
-export default SectionCopy;
+export default CopySection;

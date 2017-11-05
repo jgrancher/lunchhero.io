@@ -4,9 +4,9 @@ import { Box, Flex } from 'grid-styled';
 
 // Components
 import Container from '../Container';
+import CopySection from '../CopySection';
 import HowItWorks from '../HowItWorks';
-import SectionCopy from '../SectionCopy';
-import SectionTitle from '../SectionTitle';
+import TitleSection from '../TitleSection';
 
 // Styles
 import { StyledBanner, StyledBlocksContainer } from './styles';
@@ -15,12 +15,12 @@ const SectionHowItWorks = props => (
   <section>
     <Container>
       <StyledBanner>
-        <SectionTitle isWhite>How it works</SectionTitle>
-        <SectionCopy isWhite>
+        <TitleSection isWhite>How it works</TitleSection>
+        <CopySection isWhite>
           Let’s say you’re going out to lunch. Maybe you’re getting a Spicy Thai
           Salad. Yum! Your friend Sally wants one too so you get her one. It
           costs $13.
-        </SectionCopy>
+        </CopySection>
       </StyledBanner>
       <StyledBlocksContainer>
         <Flex ml="10%" mr="10%" wrap>

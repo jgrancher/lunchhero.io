@@ -5,8 +5,8 @@ import { Box, Flex } from 'grid-styled';
 
 // Components
 import Container from '../Container';
-import SectionCopy from '../SectionCopy';
-import SectionTitle from '../SectionTitle';
+import CopySection from '../CopySection';
+import TitleSection from '../TitleSection';
 import Why from '../Why';
 
 // Styles
@@ -14,12 +14,12 @@ import { StyledSection, StyledBlocksContainer } from './styles';
 
 const SectionWhy = props => (
   <StyledSection>
-    <SectionTitle>Why LunchHero?</SectionTitle>
-    <SectionCopy>
+    <TitleSection>Why LunchHero?</TitleSection>
+    <CopySection>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam.
-    </SectionCopy>
+    </CopySection>
     <Container>
       <StyledBlocksContainer>
         <Flex align="stretch" ml={[0, 0, '5%']} mr={[0, 0, '5%']} wrap>
