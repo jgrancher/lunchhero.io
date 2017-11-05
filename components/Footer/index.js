@@ -13,7 +13,7 @@ const Footer = props => (
     <Container>
       <StyledNav>
         <Logo isSmaller isWhite />
-        <StyledList>
+        <StyledList isMobileHidden>
           <li>
             <p>© 2017 Lunch Hero</p>
           </li>

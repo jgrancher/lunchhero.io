@@ -7,10 +7,10 @@ import Container from '../Container';
 import Partner from '../Partner';
 
 // Styles
-import StyledHr from './styles';
+import { StyledSection, StyledHr } from './styles';
 
 const SectionPartners = props => (
-  <section>
+  <StyledSection>
     <Container>
       <StyledHr />
       <Flex wrap>
@@ -29,7 +29,7 @@ const SectionPartners = props => (
         </Box>
       </Flex>
     </Container>
-  </section>
+  </StyledSection>
 );
 
 export default SectionPartners;

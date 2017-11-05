@@ -4,14 +4,20 @@ import styled from 'styled-components';
 // Variables
 import { gradients, mediaQuery, spaces } from '../../styles/variables';
 
+export const StyledSection = styled.section`
+  padding: ${spaces[3]}px 0;
+
+  ${mediaQuery(2)} {
+    padding: 80px 0;
+  }
+`;
+
 export const StyledBanner = styled.div`
   background-image: ${gradients.orange};
   border-radius: 10px;
-  margin-top: 70px;
   padding: 50px 0 70px;
 
   ${mediaQuery(2)} {
-    margin-top: 280px;
     padding-bottom: 140px;
   }
 `;

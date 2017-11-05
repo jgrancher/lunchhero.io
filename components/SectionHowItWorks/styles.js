@@ -2,12 +2,16 @@
 import styled from 'styled-components';
 
 // Variables
-import { gradients } from '../../styles/variables';
+import { gradients, mediaQuery } from '../../styles/variables';
 
 export const StyledBanner = styled.div`
   background-image: ${gradients.orange};
   border-radius: 10px;
-  padding: 100px 0 140px;
+  padding: 50px 0 140px;
+
+  ${mediaQuery(2)} {
+    padding-top: 100px;
+  }
 `;
 
 export const StyledBlocksContainer = styled.div`

@@ -5,10 +5,10 @@ import styled from 'styled-components';
 import { colors, mediaQuery, spaces } from '../../styles/variables';
 
 export const StyledSection = styled.section`
-  padding: 70px 0;
+  padding: ${spaces[3]}px 0;
 
-  ${mediaQuery(2)} {
-    padding: 160px 0;
+  ${mediaQuery(1)} {
+    padding: 80px 0;
   }
 `;
 

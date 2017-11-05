@@ -19,6 +19,12 @@ export const StyledNav = styled.nav`
 `;
 
 export const StyledList = styled.ul`
+  display: ${props => (props.isMobileHidden ? 'none' : 'block')};
+
+  ${mediaQuery(1)} {
+    display: block;
+  }
+
   li {
     display: inline-block;
     font-size: 1.6rem;

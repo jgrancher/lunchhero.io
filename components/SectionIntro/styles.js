@@ -5,12 +5,13 @@ import styled from 'styled-components';
 import { colors, mediaQuery, spaces } from '../../styles/variables';
 
 export const StyledSection = styled.section`
-  margin-bottom: 70px;
+  margin-bottom: ${spaces[3]}px;
   padding-top: 70px;
   text-align: center;
 
   ${mediaQuery(1)} {
     height: calc(100vh - ${props => (props.hasPadding ? 0 : 70)}px);
+    margin-bottom: 0;
     padding-top: ${props => (props.hasPadding ? 70 : 0)}px;
     text-align: left;
   }

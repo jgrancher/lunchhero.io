@@ -28,7 +28,7 @@ const times = [
 ];
 
 // Styles
-import { StyledBanner, StyledTitleContainer } from './styles';
+import { StyledSection, StyledBanner, StyledTitleContainer } from './styles';
 
 class SectionHowMuch extends React.Component {
   state = {
@@ -49,7 +49,7 @@ class SectionHowMuch extends React.Component {
     const perYear = 4 * 12 * perWeek;
 
     return (
-      <section>
+      <StyledSection>
         <Container>
           <StyledBanner>
             <StyledTitleContainer>
@@ -77,7 +77,7 @@ class SectionHowMuch extends React.Component {
             </SectionCopy>
           </StyledBanner>
         </Container>
-      </section>
+      </StyledSection>
     );
   }
 }
