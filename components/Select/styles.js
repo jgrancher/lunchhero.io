@@ -2,13 +2,13 @@
 import styled from 'styled-components';
 
 // Variables
-import { colors, spaces } from '../../styles/variables';
+import { colors, mediaQuery, spaces } from '../../styles/variables';
 
 export default styled.select`
   appearance: none;
   background-color: ${colors.white};
   background-image: url('../../static/svgs/icon-dropdown.svg');
-  background-position: 118px 21px;
+  background-position: 87.5% 52.5%;
   background-repeat: no-repeat;
   background-size: 12px 10px;
   border-radius: 25px;
@@ -20,10 +20,10 @@ export default styled.select`
   height: 50px;
   line-height: 50px;
   margin: 0 5px ${spaces[1]}px;
-  min-width: 140px;
-  padding: 0 ${spaces[1]}px;
+  min-width: 160px;
+  padding: 0 ${spaces[2]}px;
 
-  option {
-    margin: 0;
+  ${mediaQuery(2)} {
+    margin-bottom: 0;
   }
 `;

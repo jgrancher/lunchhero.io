@@ -6,8 +6,8 @@ import { colors, mediaQuery, spaces } from '../../styles/variables';
 
 export default styled.div`
   display: none;
-  padding-bottom: ${props => (props.isLast ? 0 : 100)}px;
-  padding-top: 100px;
+  padding-bottom: ${props => (props.isLast ? 0 : 60)}px;
+  padding-top: 60px;
   position: relative;
   z-index: 1;
 

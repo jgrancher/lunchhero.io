@@ -39,7 +39,7 @@ export const StyledList = styled.ul`
     margin: 0 ${spaces[1]}px;
 
     ${mediaQuery(2)} {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
   }
 
@@ -54,6 +54,5 @@ export const StyledList = styled.ul`
 
   a.active {
     color: ${colors.black};
-    font-weight: bold;
   }
 `;

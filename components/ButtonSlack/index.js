@@ -10,8 +10,8 @@ const ButtonSlack = props => (
     href="https://slack.com/oauth/authorize?scope=&client_id="
     {...props}
   >
-    <img alt="" src="../../static/svgs/icon-slack.svg" width="20" /> Add to
-    Slack
+    <img alt="" src="../../static/svgs/icon-slack.svg" width="20" />
+    <span>Add to Slack</span>
   </StyledButton>
 );
 

@@ -20,7 +20,7 @@ export const StyledSection = styled.section`
 export const StyledCopy = styled.p`
   color: ${colors.grey};
   font-size: 2rem;
-  line-height: 1.75;
+  line-height: 1.4;
   margin: 15px auto;
   max-width: 450px;
 

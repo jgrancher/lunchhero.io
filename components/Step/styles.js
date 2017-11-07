@@ -4,7 +4,7 @@ import styled from 'styled-components';
 // Variables
 import { mediaQuery, spaces } from '../../styles/variables';
 
-export default styled.div`
+export const StyledStep = styled.div`
   padding: 0 ${spaces[2]}px;
   position: relative;
   text-align: center;
@@ -15,12 +15,14 @@ export default styled.div`
     display: flex;
     justify-content: space-between;
   }
+`;
 
-  img {
-    margin-top: ${props => (props.isLast ? spaces[3] : spaces[2])}px;
+export const StyledImage = styled.img`
+  margin-top: ${spaces[2]}px;
+  max-width: ${props => (props.isLast ? 60 : 100)}%;
 
-    ${mediaQuery(2)} {
-      margin-top: 0;
-    }
+  ${mediaQuery(2)} {
+    margin-top: 0;
+    max-width: 100%;
   }
 `;

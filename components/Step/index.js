@@ -9,18 +9,26 @@ import Copy from '../Copy';
 import Title from '../Title';
 
 // Styles
-import StyledStep from './styles';
+import { StyledStep, StyledImage } from './styles';
 
 const Step = props => (
   <StyledStep isLast={props.isLast}>
     <Flex align="center" className="w-100" justify="stretch" wrap>
-      <Box width={[1, 1, 1 / 2]} px={[0, 0, 5]}>
+      <Box
+        width={[1, 1, 1 / 2]}
+        pl={[0, 0, 5]}
+        pr={[0, 0, props.isLast ? 4 : 5]}
+      >
         {props.number ? <Circle>{props.number}</Circle> : null}
         <Title>{props.title}</Title>
         {props.copy ? <Copy>{props.copy}</Copy> : null}
       </Box>
       <Box width={[1, 1, 1 / 2]}>
-        <img alt="" src={`../../static/assets/${props.icon}.png`} />
+        <StyledImage
+          alt=""
+          isLast={props.isLast}
+          src={`../../static/assets/${props.icon}.png`}
+        />
       </Box>
     </Flex>
   </StyledStep>

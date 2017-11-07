@@ -10,6 +10,10 @@ export const StyledSection = styled.section`
   ${mediaQuery(2)} {
     padding: 80px 0;
   }
+
+  p {
+    line-height: 1.7;
+  }
 `;
 
 export const StyledBanner = styled.div`

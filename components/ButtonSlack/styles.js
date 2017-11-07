@@ -2,7 +2,13 @@
 import styled from 'styled-components';
 
 // Variables
-import { colors, gradients, mediaQuery, times } from '../../styles/variables';
+import {
+  colors,
+  gradients,
+  mediaQuery,
+  spaces,
+  times,
+} from '../../styles/variables';
 
 export default styled.a`
   align-items: center;
@@ -14,10 +20,9 @@ export default styled.a`
   font-weight: bold;
   height: 46px;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 0 20px;
   text-decoration: none;
   transition: opacity ${times.medium}ms ease;
-  width: 140px;
 
   &:hover {
     background: ${colors.pink};
@@ -29,6 +34,9 @@ export default styled.a`
 
   ${mediaQuery(2)} {
     font-size: 1.8rem;
-    width: 170px;
+  }
+
+  img {
+    margin-right: ${spaces[1]}px;
   }
 `;

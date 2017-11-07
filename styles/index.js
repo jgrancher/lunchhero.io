@@ -46,6 +46,13 @@ injectGlobal`
     list-style: none;
   }
 
+  sup {
+    font-size: 33%;
+    line-height: 0;
+    position: relative;
+    top: -0.5rem;
+  }
+
   /* Basic layout classes */
   .w-100 {
     width: 100%;

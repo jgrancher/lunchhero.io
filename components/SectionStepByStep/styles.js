@@ -34,6 +34,6 @@ export const StyledExtraStep = styled.div`
   padding-top: ${spaces[3]}px;
 
   ${mediaQuery(2)} {
-    padding-top: 140px;
+    padding-top: ${spaces[5]}px;
   }
 `;
