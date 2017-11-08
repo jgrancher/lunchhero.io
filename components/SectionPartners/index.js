@@ -16,13 +16,13 @@ const SectionPartners = props => (
       <Flex wrap>
         <Box width={[1, 1, 1 / 2]}>
           <Partner
-            copy="LunchHero has launched with World Vision but will soon be taking on new charities. If you are interested in taking donations from LunchHero please sign up and we’ll be sure to get in touch when LunchHero can choose their own charity."
+            copy="LunchHero has kicked off with World Vision as its launch charity. However, we will be adding new charities soon. If you’re a charity and you’re interested in taking donations through LunchHero, please sign up and we’ll be in touch when users can choose their own charity."
             icon="logo-world-vision"
           />
         </Box>
         <Box width={[1, 1, 1 / 2]}>
           <Partner
-            copy="Lunch Hero is made possible by PayPal and their new split payment system. Use placeholder copy if needed. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            copy="LunchHero is made possible by PayPal’s new split payment system."
             icon="logo-paypal"
             isLast
           />

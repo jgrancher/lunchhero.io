@@ -28,8 +28,9 @@ const SectionIntro = props => (
         <Box width={[1, 1, 1 / 2]} pr={[0, 0, 3]} pt={[3, 3, 0]}>
           <Logo isBigger />
           <StyledCopy>
-            A Slackbot that helps you raise money for charity by getting lunch
-            for your co-workers.
+            Want lunch and to make a difference? Two great ideas together at
+            last thanks to LunchHero – a Slackbot that helps you raise money for
+            charity when you pick up lunch for your workmates.
           </StyledCopy>
           <StyledSlogan>Feed the world, and your co-workers.</StyledSlogan>
           <StyledButton>

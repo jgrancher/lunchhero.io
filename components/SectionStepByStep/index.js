@@ -14,20 +14,21 @@ import { StyledSection, StyledList, StyledExtraStep } from './styles';
 
 const SectionStepByStep = props => (
   <StyledSection>
-    <TitleSection>Step by step</TitleSection>
+    <TitleSection>Click by click</TitleSection>
     <CopySection>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam.
+      Sometimes you might be heading out to grab lunch, other times a co-worker
+      might be picking it up. Either way, LunchHero makes getting lunch more
+      fulfilling than ever. Here’s a click-by-click breakdown of how we make
+      lunch the best meal of the day.
     </CopySection>
     <Container>
       <StyledList>
         <li className="step">
           <Step
-            copy="(our bot listens out for the word 'lunch')"
+            copy="the LunchHero bot is listening out for the word ‘lunch’"
             icon="screenshot-1"
             number={1}
-            title="Ask your team mates if they want lunch on Slack"
+            title="Ask your workmates if they want lunch on Slack"
           />
         </li>
         <li>
@@ -35,9 +36,10 @@ const SectionStepByStep = props => (
         </li>
         <li className="step">
           <Step
+            copy="what a legend!"
             icon="screenshot-2"
             number={2}
-            title="Get them lunch when you’re getting yours"
+            title="Grab their lunch when you’re picking up yours"
           />
         </li>
         <li>
@@ -45,9 +47,10 @@ const SectionStepByStep = props => (
         </li>
         <li className="step step--last">
           <Step
+            copy="so we can raise money for charity"
             icon="screenshot-3"
             number={3}
-            title="Request payment through the LunchHero bot"
+            title="Ask them to pay using LunchHero"
           />
         </li>
         <li>
@@ -56,10 +59,10 @@ const SectionStepByStep = props => (
       </StyledList>
       <StyledExtraStep>
         <Step
-          copy="We take no money in the transaction. The full amount goes to charity and is transferred immediately to you, and daily to World Vision (to avoid excessive transaction fees)."
+          copy="we take no money in this transaction. The lunch money is transferred to you immediately. The $2 is sent to World Vision daily (to avoid excessive transfer fees). "
           icon="illustration-coins"
           isLast
-          title="LunchHero bot will top up the payment with a small delivery charge that goes directly to World Vision."
+          title="LunchHero adds a $2 delivery fee that goes to World Vision"
         />
       </StyledExtraStep>
     </Container>
