@@ -27,7 +27,7 @@ yarn dev
 ### Deployment
 
 ```bash
-yarn build && yarn deploy
+yarn deploy
 ```
 
 ### Notes
