@@ -21,12 +21,12 @@ const Footer = props => (
         <StyledList>
           <li>
             <a href="http://twitter.com/" target="_blank">
-              <img alt="" src="../../static/svgs/icon-twitter.svg" />
+              <img alt="" src="/static/svgs/icon-twitter.svg" />
             </a>
           </li>
           <li>
             <a href="http://facebook.com/" target="_blank">
-              <img alt="" src="../../static/svgs/icon-facebook.svg" />
+              <img alt="" src="/static/svgs/icon-facebook.svg" />
             </a>
           </li>
         </StyledList>

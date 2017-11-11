@@ -11,7 +11,7 @@ import StyledWhy from './styles';
 
 const Why = props => (
   <StyledWhy>
-    <img alt="" src={`../../static/assets/${props.icon}.png`} />
+    <img alt="" src={`/static/assets/${props.icon}.png`} />
     <Title>{props.title}</Title>
     <Copy>{props.copy}</Copy>
   </StyledWhy>

@@ -10,7 +10,7 @@ import StyledPartner from './styles';
 
 const Partner = props => (
   <StyledPartner isLast={props.isLast}>
-    <img alt="Partner" src={`../../static/assets/${props.icon}.png`} />
+    <img alt="Partner" src={`/static/assets/${props.icon}.png`} />
     <Copy isCentered={false}>{props.copy}</Copy>
   </StyledPartner>
 );

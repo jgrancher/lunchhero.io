@@ -12,7 +12,7 @@ import StyledImage from './styles';
 
 const HowItWorks = props => (
   <div>
-    <StyledImage alt="" src={`../../static/assets/icon-${props.icon}.png`} />
+    <StyledImage alt="" src={`/static/assets/icon-${props.icon}.png`} />
     <Title>{props.title}</Title>
     <Copy>{props.copy}</Copy>
   </div>

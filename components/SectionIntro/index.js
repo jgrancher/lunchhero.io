@@ -38,7 +38,7 @@ const SectionIntro = props => (
           </StyledButton>
         </Box>
         <Box width={[1, 1, 1 / 2]} py={[3, 0]}>
-          <img alt="Lunch Hero" src="../../static/assets/lunch-hero.png" />
+          <img alt="Lunch Hero" src="/static/assets/lunch-hero.png" />
         </Box>
       </Flex>
     </Container>

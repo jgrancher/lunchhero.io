@@ -16,7 +16,7 @@ const StepProgress = props => (
       <Box width={[1, 1, 1 / 2]}>
         <StyledImageContainer isLast={props.isLast}>
           <Circle isShifted={props.isLast}>
-            <img alt="" src={`../../static/svgs/icon-arrow.svg`} />
+            <img alt="" src={`/static/svgs/icon-arrow.svg`} />
           </Circle>
         </StyledImageContainer>
       </Box>

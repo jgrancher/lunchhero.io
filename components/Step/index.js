@@ -23,7 +23,7 @@ const Step = props => (
         <StyledImage
           alt=""
           isLast={props.isLast}
-          src={`../../static/assets/${props.icon}.png`}
+          src={`/static/assets/${props.icon}.png`}
         />
       </Box>
     </Flex>

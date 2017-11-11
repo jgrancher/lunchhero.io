@@ -7,7 +7,7 @@ import { colors, mediaQuery, spaces } from '../../styles/variables';
 export default styled.select`
   appearance: none;
   background-color: ${colors.white};
-  background-image: url('../../static/svgs/icon-dropdown.svg');
+  background-image: url('/static/svgs/icon-dropdown.svg');
   background-position: 87.5% 52.5%;
   background-repeat: no-repeat;
   background-size: 12px 10px;
